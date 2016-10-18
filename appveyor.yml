@@ -18,7 +18,7 @@ init:
   - git config --global core.autocrlf true
 
 install:
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node $env:nodejs_version x64
   - npm install -g npm
   - ps: $env:path = $env:appdata + "\npm;" + $env:path
   - npm install && npm install karma-ie-launcher
