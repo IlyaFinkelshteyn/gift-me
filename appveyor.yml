@@ -20,8 +20,6 @@ init:
 install:
   - ps: Install-Product node $env:nodejs_version
   - npm install -g npm
-  - npm install -g webdriver-manager
-  - npm update -g webdriver-manager --versions.chrome=2.24 --versions.standalone=2.53.1
   - ps: $env:path = $env:appdata + "\npm;" + $env:path
   - npm install && npm install karma-ie-launcher
 
