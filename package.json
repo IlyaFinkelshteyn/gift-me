@@ -33,9 +33,9 @@
     "test": "gulp test --color",
     "e2e.ci": "gulp build.prod --color && gulp build.js.e2e --color && gulp e2e --color",
     "tests.all": "npm test && npm run e2e.ci",
-    "webdriver-start": "webdriver-manager start",
-    "webdriver-update": "webdriver-manager update"
-  },
+    "webdriver-update": "webdriver-manager update --versions.chrome=2.24 --versions.standalone=2.53.1",
+    "webdriver-start": "webdriver-manager start"
+      },
   "author": "Simon Thibert <sthibert>",
   "license": "MIT",
   "devDependencies": {
